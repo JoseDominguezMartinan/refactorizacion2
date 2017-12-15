@@ -1,38 +1,16 @@
-
 package factorial;
 
-
-public class Factorial {
-
-
-    public static void main(String[] args) {
-
-
-    int j;
-    int f;
-
-  
-   j = 8;    
-   
-
-    
-   int i;
-   if (j == 0)
-f = 1;
-   else
-   {
-f = 1;
-for (i = j; i >= 1; i--)
+public class Factorial
 {
-    f = f * i;
-}
-   }    
-  
- 
 
-System.out.println(f); 
+    public static void main(String[] args)
+    {
+        /**
+         * creacion de un obxeto e chamada ao metodo
+         */
 
-
+        CalculoFactorial obxFactorial = new CalculoFactorial();
+        obxFactorial.calcFactorial();
+        System.out.println(obxFactorial.getFactor());
     }
-    
 }
